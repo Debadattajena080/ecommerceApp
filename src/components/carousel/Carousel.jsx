@@ -5,7 +5,6 @@ import gadgets from "../../assets/earphone.png";
 import clothing from "../../assets/clothing.png";
 import shoes from "../../assets/shoes.png";
 import furniture from "../../assets/furnitures.png";
-import { a } from "framer-motion/client";
 
 export default function SimpleSlider() {
   const [currentSlide, setCurrentSlide] = useState(0); // Track the current slide

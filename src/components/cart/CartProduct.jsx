@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { PiCurrencyDollarSimpleBold } from "react-icons/pi";
 import { MdDeleteOutline } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa";
