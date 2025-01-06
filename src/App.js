@@ -4,6 +4,8 @@ import Index from "./components/Index";
 import Carousel from "./components/carousel/Carousel";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Services from "./components/services/Services";
+import Footer from "./components/footer/Footer";
 function App() {
   return (
     <div className="App overflow-hidden">
@@ -11,8 +13,10 @@ function App() {
         <ToastContainer />
         <Navbar />
         <Carousel />
+        <Services />
         <Index />
       </ErrorBoundary>
+      <Footer />
     </div>
   );
 }
