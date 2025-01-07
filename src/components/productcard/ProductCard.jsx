@@ -5,7 +5,8 @@ import { CartContext } from "../context/CartContext";
 import { toast } from "react-toastify";
 
 const ProductCard = ({ item }) => {
-  const { cartItems, setCartItems } = useContext(CartContext);
+  const {  setCartItems } = useContext(CartContext);
+
   const addToCart = (item) => {
     setCartItems((prevItems) => {
       const itemExists = prevItems.some((cartItem) => cartItem.id === item.id);
@@ -18,34 +19,48 @@ const ProductCard = ({ item }) => {
       }
     });
   };
-  console.log(cartItems);
+
   return (
-    <>
-      <div className="card w-96 bg-base-100 rounded-lg shadow-xl shadow-red-100 hover:shadow-2xl">
-        <figure className="px-10 pt-10 flex justify-center items-center">
-          <img src={item.image} alt="Shoes" className="rounded-xl h-44 " />
+    <div className="relative group card bg-white rounded-lg shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 w-96">
+      <div className="overflow-hidden">
+        <figure className="w-full h-52 my-6 flex justify-center items-center group-hover:scale-110 transition-transform duration-500">
+          <img
+            src={item.image}
+            alt={item.title}
+            className="h-full w-80 object-contain"
+          />
         </figure>
-        <div className="card-body items-center text-center mt-6 "></div>
-        <div className="flex mx-4 justify-between items-center">
-          <div className="flex justify-center items-center bg-red-100 py-1 px-2 rounded-3xl">
-            <PiCurrencyDollarSimpleBold className="text-2xl" />
-            <span className="font-semibold">{item.price}</span>
+      </div>
+      <div className="p-4">
+        <h3 className="text-lg font-bold text-gray-800 truncate">
+          {item.title}
+        </h3>
+        <p className="text-gray-500 text-sm mt-1 truncate">
+          {item.description}
+        </p>
+        <div className="flex justify-between items-center mt-6">
+          <div className="flex items-center bg-red-100 py-1 px-2 rounded-full">
+            <PiCurrencyDollarSimpleBold className="text-2xl text-red-500" />
+            <span className="ml-1 font-semibold text-gray-800">
+              {item.price}
+            </span>
           </div>
-          <div className="flex justify-center items-center ">
-            <FaStar className="text-xl mr-2 text-red-300" />
-            <p className="font-semibold">
-              {item.rating.rate}({item.rating.count})
+          <div className="flex items-center">
+            <FaStar className="text-xl text-yellow-400" />
+            <p className="ml-1 font-medium text-gray-700">
+              {item.rating.rate}{" "}
+              <span className="text-sm">({item.rating.count})</span>
             </p>
           </div>
         </div>
-        <div
-          className="cursor-pointer card-actions border rounded-lg w-full flex justify-center items-center bg-red-200 my-6 p-2 hover:bg-red-300"
-          onClick={() => addToCart(item)}
-        >
-          <button className="text-md font-semibold">Add to cart</button>
-        </div>
       </div>
-    </>
+      <button
+        className="absolute bottom-3 left-1/2 transform -translate-x-1/2 translate-y-1/2 bg-red-500 text-white font-semibold py-2 px-6 rounded-full shadow-lg opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500"
+        onClick={() => addToCart(item)}
+      >
+        Add to Cart
+      </button>
+    </div>
   );
 };
 

@@ -11,13 +11,13 @@ const DownloadPage = () => {
       <img
         src={phoneTile}
         alt="phoneTile"
-        className="w-2/5 h-auto object-contain "
+        className="w-1/3 h-auto object-contain "
       />
 
       <div className="">
         <h1 className="text-3xl md:text-4xl font-bold text-pink-600 mb-4">
           <FaMobileAlt className="inline-block mr-4" />
-          Get The e-Commerce App
+          Get The e-commerce App
         </h1>
         <p className="text-gray-600 mb-6 leading-relaxed font-semibold text-lg">
           Discover a seamless shopping experience with our app. Explore the best{" "}
