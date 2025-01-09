@@ -3,29 +3,31 @@ import { FaEnvelope, FaMapMarkerAlt, FaClock } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-50 text-gray-700 py-12">
+    <footer className=" text-gray-800 py-12">
       <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 px-6">
         {/* Contact Us Section */}
         <div className="ml-16">
           <h3 className="text-lg font-bold text-gray-800 mb-6">Contact Us</h3>
           <div className="mb-4 flex items-center">
             <FaMapMarkerAlt className="text-blue-500 text-xl mr-4" />
-            <p>450 CD, Country Latin literature.</p>
+            <p className="font-semibold">450 CD, Country Latin literature.</p>
           </div>
           <div className="mb-4 flex items-center">
             <FaClock className="text-green-500 text-xl mr-4" />
-            <p>8am-9pm, Mon-Sat</p>
+            <p className="font-semibold">8am-9pm, Mon-Sat</p>
           </div>
           <div className="flex items-center">
             <FaEnvelope className="text-red-500 text-xl mr-4" />
-            <p>contact-fashionshop.com</p>
+            <p className="font-semibold">contact-fashionshop.com</p>
           </div>
         </div>
 
         {/* Policies & Info Section */}
         <div className="ml-16">
-          <h3 className="text-lg font-bold text-gray-800 mb-6">Policies & Info</h3>
-          <ul className="space-y-3">
+          <h3 className="text-lg font-bold text-gray-800 mb-6">
+            Policies & Info
+          </h3>
+          <ul className="space-y-3 font-semibold">
             <li>
               <button className="hover:text-blue-500 transition duration-200 ease-in-out">
                 Terms & Conditions
@@ -57,7 +59,7 @@ const Footer = () => {
         {/* Quick Links Section */}
         <div className="ml-16">
           <h3 className="text-lg font-bold text-gray-800 mb-6">Quick Links</h3>
-          <ul className="space-y-3">
+          <ul className="space-y-3 font-semibold">
             <li>
               <button className="hover:text-blue-500 transition duration-200 ease-in-out">
                 Home
@@ -89,7 +91,7 @@ const Footer = () => {
         {/* Subscribe Us Section */}
         <div className="mr-12">
           <h3 className="text-lg font-bold text-gray-800 mb-6">Subscribe Us</h3>
-          <p className="mb-6">
+          <p className="mb-6 font-semibold">
             Stay updated with the latest offers and trends.
           </p>
           <form className="flex">

@@ -18,13 +18,21 @@ const Dashboard = () => {
   return (
     <>
       <div className="text-center py-8 my-8">
-        <h1 className="text-4xl font-bold mb-4 tracking-wide">
-          TOP CATEGORIES
-        </h1>
-        <p className="text-lg font-medium max-w-2xl mx-auto">
-          How does it feel when you see amazing discount deals for each product?
-          Explore our top categories and grab the best offers now!
-        </p>
+        <div className="text-center py-12 ">
+          <h1 className="text-5xl font-extrabold mb-6 tracking-tight text-gray-800">
+            <span className="bg-gradient-to-r from-red-500 to-pink-500 text-transparent bg-clip-text">
+              Top Categories
+            </span>
+          </h1>
+          <p className="text-lg font-medium max-w-3xl mx-auto text-gray-600 leading-relaxed">
+            Discover amazing discounts and unbeatable deals across all our
+            categories. Dive in, explore your favorites, and grab the best
+            offers now!
+          </p>
+          <div className="mt-8">
+            <div className="h-1 w-16 bg-gradient-to-r from-red-500 to-pink-500 mx-auto rounded"></div>
+          </div>
+        </div>
       </div>
 
       <div className="container flex justify-center items-center flex-wrap m-4">
