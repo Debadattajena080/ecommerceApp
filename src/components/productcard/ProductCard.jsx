@@ -21,7 +21,7 @@ const ProductCard = ({ item }) => {
   };
 
   return (
-    <div className="relative group card bg-white rounded-lg shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 w-96">
+    <div className="relative group card bg-white rounded-lg shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 w-96 mb-8 ">
       <div className="overflow-hidden">
         <figure className="w-full h-52 my-6 flex justify-center items-center group-hover:scale-110 transition-transform duration-500">
           <img

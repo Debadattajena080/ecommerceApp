@@ -6,17 +6,23 @@ import Men from "./categories/men/Men";
 import Jewellery from "./categories/jewellery/Jewellery";
 import Electronics from "./categories/electronics/Electronics";
 import Cart from "./cart/Cart";
+import TopCategories from "./utility/TopCategories";
+import CategoryNavBar from "./navbar/CategoryNav";
 
 const Index = () => {
   return (
-    <Routes>
-      <Route path="/" element={<Dashboard />} />
-      <Route path="/women" element={<Women />} />
-      <Route path="/men" element={<Men />} />
-      <Route path="/jewellery" element={<Jewellery />} />
-      <Route path="/electronics" element={<Electronics />} />
-      <Route path="/cart" element={<Cart />} />
-    </Routes>
+    <>
+      <TopCategories />
+      <CategoryNavBar />
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/women" element={<Women />} />
+        <Route path="/men" element={<Men />} />
+        <Route path="/jewellery" element={<Jewellery />} />
+        <Route path="/electronics" element={<Electronics />} />
+        <Route path="/cart" element={<Cart />} />
+      </Routes>
+    </>
   );
 };
 

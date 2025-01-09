@@ -14,8 +14,8 @@ function App() {
         <ToastContainer />
         <Navbar />
         <Carousel />
-        <Services />
         <Index />
+        <Services />
         <DownloadPage />
       </ErrorBoundary>
       <Footer />

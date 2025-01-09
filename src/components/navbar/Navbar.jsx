@@ -26,41 +26,7 @@ const Navbar = () => {
               <div className="flex flex-shrink-0 items-center">
                 <img className="h-10 w-auto" src={logo} alt="Your Company" />
               </div>
-              <div className="hidden sm:ml-6 sm:block">
-                <div className="flex space-x-4">
-                  <Link
-                    to="/"
-                    className="bg-gray-900 text-red-300 rounded-md px-3 py-2 text-sm font-medium"
-                    aria-current="page"
-                  >
-                    Dashboard
-                  </Link>
-                  <Link
-                    to="/women"
-                    className="text-red-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
-                  >
-                    Women
-                  </Link>
-                  <Link
-                    to="/men"
-                    className="text-red-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
-                  >
-                    Men
-                  </Link>
-                  <Link
-                    to="/jewellery"
-                    className="text-red-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
-                  >
-                    Jewellery
-                  </Link>
-                  <Link
-                    to="/electronics"
-                    className="text-red-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
-                  >
-                    Electronics
-                  </Link>
-                </div>
-              </div>
+              <div className="hidden sm:ml-6 sm:block"></div>
             </div>
             <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
               <Link
