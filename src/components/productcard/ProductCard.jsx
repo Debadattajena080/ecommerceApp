@@ -28,6 +28,7 @@ const ProductCard = ({ item }) => {
             src={item.image}
             alt={item.title}
             className="h-full w-80 object-contain"
+            loading="lazy"
           />
         </figure>
       </div>

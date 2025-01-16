@@ -27,6 +27,7 @@ const CartProduct = ({ handleDecreamentCounter, handleIncrementCounter, currentC
               className="hidden h-20 w-20 dark:block"
               src={cartItem.image}
               alt="imac"
+              loading="lazy"
             />
 
             <label for="counter-input" className="sr-only">

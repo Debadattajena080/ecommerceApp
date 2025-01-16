@@ -35,7 +35,7 @@ const Services = () => {
         </p>
       </div>
 
-      <div className="container mr-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className=" mx-auto container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {serviceData.map((service, index) => (
           <div
             key={index}

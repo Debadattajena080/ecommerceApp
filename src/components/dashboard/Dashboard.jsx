@@ -17,18 +17,13 @@ const Dashboard = () => {
 
   return (
     <>
-      
-
-      <div className="container flex justify-center items-center flex-wrap m-4">
-        {loading ? (
-          <Loading />
-        ) : (
-          data?.map((item) => (
-            <div key={item.id} className="m-4">
-              <ProductCard item={item} />
-            </div>
-          ))
-        )}
+      <div className="flex flex-wrap justify-center gap-4">
+        {loading && <Loading />}
+        {data?.map((item) => (
+          <div key={item.id} className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
+            <ProductCard item={item} />
+          </div>
+        ))}
       </div>
     </>
   );

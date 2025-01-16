@@ -27,17 +27,32 @@ const DownloadPage = () => {
         <div className="flex gap-4 mt-4">
           {/* Google Play */}
           <span className="flex items-center bg-gray-100 p-3 rounded-lg shadow-md hover:shadow-lg hover:bg-gray-200 transition-all">
-            <img src={googlePlay} alt="Google Play" className="h-12 w-auto" />
+            <img
+              src={googlePlay}
+              alt="Google Play"
+              className="h-12 w-auto"
+              loading="lazy"
+            />
           </span>
 
           {/* App Store */}
           <span className="flex items-center bg-gray-100 p-3 rounded-lg shadow-md hover:shadow-lg hover:bg-gray-200 transition-all">
-            <img src={appStore} alt="App Store" className="h-12 w-auto" />
+            <img
+              src={appStore}
+              alt="App Store"
+              className="h-12 w-auto"
+              loading="lazy"
+            />
           </span>
 
           {/* App Gallery */}
           <span className="flex items-center bg-gray-100 p-3 rounded-lg shadow-md hover:shadow-lg hover:bg-gray-200 transition-all">
-            <img src={appGallery} alt="App Gallery" className="h-12 w-auto" />
+            <img
+              src={appGallery}
+              alt="App Gallery"
+              className="h-12 w-auto"
+              loading="lazy"
+            />
           </span>
         </div>
       </div>

@@ -67,6 +67,7 @@ export default function SimpleSlider() {
                   src={slide.image}
                   alt={slide.title}
                   className="w-full h-auto object-contain transform transition-transform duration-500 ease-out group-hover:scale-110"
+                  loading="lazy"
                 />
               </motion.div>
 
