@@ -21,7 +21,7 @@ const ProductCard = ({ item }) => {
   };
 
   return (
-    <div className="relative group card bg-white rounded-lg shadow-md overflow-hidden hover:shadow-2xl transition-shadow duration-300 w-96 mb-8 ">
+    <div className="relative group card bg-white rounded-lg shadow-xs overflow-hidden hover:shadow-2xl transition-shadow duration-300 w-96 mb-8 ">
       <div className="overflow-hidden">
         <figure className="w-full h-52 my-6 flex justify-center items-center group-hover:scale-110 transition-transform duration-500">
           <img
@@ -40,8 +40,8 @@ const ProductCard = ({ item }) => {
           {item.description}
         </p>
         <div className="flex justify-between items-center mt-6">
-          <div className="flex items-center bg-red-100 py-1 px-2 rounded-full">
-            <PiCurrencyDollarSimpleBold className="text-2xl text-red-500" />
+          <div className="flex items-center bg-red-100 py-1 px-4 rounded-full">
+            <PiCurrencyDollarSimpleBold className="text-md text-red-500" />
             <span className="ml-1 font-semibold text-gray-800">
               {item.price}
             </span>
@@ -56,7 +56,7 @@ const ProductCard = ({ item }) => {
         </div>
       </div>
       <button
-        className="absolute bottom-3 left-1/2 transform -translate-x-1/2 translate-y-1/2 bg-red-500 text-white font-semibold py-2 px-6 rounded-full shadow-lg opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500"
+        className= "ml-1.5 absolute bottom-3 left-1/2 transform -translate-x-1/2 translate-y-1/2 bg-red-500 text-white font-semibold py-2 px-6 rounded-full shadow-lg opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500"
         onClick={() => addToCart(item)}
       >
         Add to Cart

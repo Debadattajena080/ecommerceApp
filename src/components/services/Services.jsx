@@ -28,14 +28,14 @@ const Services = () => {
 
   return (
     <div className="py-8">
-      <div className="text-center mb-8">
+      <div className="text-center mb-8 mt-10">
         <h2 className="text-3xl font-bold text-gray-800">Our Services</h2>
         <p className="text-gray-600">
           We provide a range of services to enhance your shopping experience.
         </p>
       </div>
 
-      <div className=" mx-auto container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className=" mx-auto mt-10 container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {serviceData.map((service, index) => (
           <div
             key={index}

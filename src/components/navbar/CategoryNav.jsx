@@ -14,7 +14,7 @@ const CategoryNavBar = () => {
   const activeCategory = location.pathname === "/" ? "all" : location.pathname.slice(1);
 
   return (
-    <div className="flex justify-center items-center space-x-4 py-4 mb-8">
+    <div className="flex justify-center items-center space-x-4 py-4 mb-8 sticky top-0 z-20">
       {categories.map((category) => (
         <Link
           key={category.id}

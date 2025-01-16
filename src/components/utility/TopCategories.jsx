@@ -14,8 +14,10 @@ const TopCategories = () => {
           categories. Dive in, explore your favorites, and grab the best offers
           now!
         </p>
-        <div className="mt-8">
-          <div className="h-1 w-16 bg-gradient-to-r from-red-500 to-pink-500 mx-auto rounded"></div>
+        <div className="mt-8 flex md:w-1/5 mx-auto">
+          <div className="h-1 w-12 bg-gradient-to-r from-red-500 to-pink-500 mx-auto rounded"></div>
+          <div className="h-1 w-12 bg-gradient-to-r from-red-500 to-pink-500 mx-auto rounded"></div>
+          <div className="h-1 w-12 bg-gradient-to-r from-red-500 to-pink-500 mx-auto rounded"></div>
         </div>
       </div>
     </div>
